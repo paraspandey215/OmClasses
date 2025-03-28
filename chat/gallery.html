@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - OM CLASSES</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="logo">
+            <span class="om-symbol">ॐ</span>
+            OM CLASSES
+        </div>
+        <div class="nav-links">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#courses">Courses</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="menu-btn">☰</div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h2 data-aos="fade-up">Our Gallery</h2>
+        <div class="gallery-grid">
+            <!-- Example gallery items - Replace src with your actual image paths -->
+            <div class="gallery-item" data-aos="fade-up">
+                <img src="images/classroom1.jpg" alt="Modern Classroom" loading="lazy">
+                <div class="gallery-caption">Modern Classroom Setup</div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/students1.jpg" alt="Students Learning" loading="lazy">
+                <div class="gallery-caption">Interactive Learning Sessions</div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/lab1.jpg" alt="Science Lab" loading="lazy">
+                <div class="gallery-caption">Well-Equipped Science Lab</div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up">
+                <img src="images/library1.jpg" alt="Library" loading="lazy">
+                <div class="gallery-caption">Extensive Library Collection</div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/events1.jpg" alt="Student Events" loading="lazy">
+                <div class="gallery-caption">Student Achievement Ceremony</div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/faculty1.jpg" alt="Expert Faculty" loading="lazy">
+                <div class="gallery-caption">Our Expert Faculty</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>OM CLASSES</h3>
+                <p>A Perfect Place for Your Future</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 OM CLASSES. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
